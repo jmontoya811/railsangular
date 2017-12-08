@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ProposalListComponent } from './proposal/proposal-list.component';
 
 @NgModule({
 	imports: [
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
 	declarations: [
 	  AppComponent,
 	  HomepageComponent,
-	  DocumentsComponent
+	  DocumentsComponent,
+	  ProposalListComponent
 	],
 	bootstrap: [
 	  AppComponent
