@@ -1,9 +1,48 @@
-<h1>Navigation</h1>
+<!-- <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <div class='container'>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/home">Home</a>
+      <a class="nav-item nav-link" routerLink="/documents">Docs</a>
+      <li class="nav-item dropdown">
+        <div ngbDropdown class="d-inline-block dropdown-links">
+          <button class="btn btn-outline-primary" id="proposalDropdown" ngbDropdownToggle>
+            Proposals
+          </button>
+          <div class="dropdown-menu" aria-labelledby="proposalDropdown">
+            <a class="dropdown-item" routerLink="/proposals">Proposals</a>
+            <a class="dropdown-item" routerLink="/proposals/new">New Proposal</a>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+</nav>
 
-<a routerLink="/home">docs</a>
-<a routerLink="/documents">home</a>
-<a routerLink="/proposals">proposals</a>
-<a routerLink="/proposals/new">new proposals</a>
+ -->
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+	<div class='container'>
+		<ul class="nav navbar-nav">
+			<li class='nav-item'>
+				<a class='nav-link' routerLink="/home">Home</a>
+			</li><li class='nav-item'>
+				<a class='nav-link' routerLink="/documents">Documents</a>
+			</li>
+
+			<li class="nav-item dropdown">
+				<div ngbDropdown class="d-inline-block dropdown-links">
+					<button class="btn btn-outline-primary" id="proposalDropdown"
+					ngbDropdownToggle>
+					Proposals
+					</button>
+					<div class="dropdown-menu" aria-labbeledby="proposalDropdown">
+						<a class="dropdown-item" routerLink="/proposals">Proposals</a>
+						<a class="dropdown-item" routerLink="/proposals/new">New Proposal</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
 
 
 <router-outlet></router-outlet>
