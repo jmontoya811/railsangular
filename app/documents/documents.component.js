@@ -16,19 +16,19 @@ var DocumentsComponent = /** @class */ (function () {
                 description: "The best biggest docs ever",
                 file_url: "http://google.com",
                 updated_at: "12/08/17",
-                image_url: 'http://google.com'
+                image_url: 'app/assets/imgs/polarbr.png'
             }, {
                 title: "My 2nd Doc",
                 description: "The best biggest docs ever",
                 file_url: "http://google.com",
                 updated_at: "12/08/17",
-                image_url: 'http://google.com'
+                image_url: 'app/assets/imgs/polarbr.png'
             }, {
                 title: "Doc the thirds",
                 description: "The best biggest docs ever",
                 file_url: "http://google.com",
                 updated_at: "12/08/17",
-                image_url: 'http://google.com'
+                image_url: 'app/assets/imgs/polarbr.png'
             }
         ];
     }
@@ -36,7 +36,8 @@ var DocumentsComponent = /** @class */ (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'documents',
-            templateUrl: 'documents.component.html'
+            templateUrl: 'documents.component.html',
+            styleUrls: ['documents.component.css']
         })
     ], DocumentsComponent);
     return DocumentsComponent;
