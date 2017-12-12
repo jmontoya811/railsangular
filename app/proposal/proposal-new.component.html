@@ -8,6 +8,7 @@
 					<div class="form-group">
 						<label for="customer">Customer Name</label>
 						<input type="text"
+								class="form-control"
 								id="customer"
 								placeholder="ABC 123"
 								required
@@ -25,6 +26,7 @@
 					<div class="form-group">
 						<label for="portfolio_url">Portfolio URL</label>
 						<input type="text"
+								class="form-control"
 								id="portfolio_url"
 								placeholder="ABC 123"
 								required
@@ -40,6 +42,7 @@
 					<div class="form-group">
 						<label for="tools">Tools You'll Use</label>
 						<input type="text"
+								class="form-control"
 								id="tools"
 								placeholder="Ruby on Rails, Angular, Typescript"
 								required
@@ -54,6 +57,7 @@
 						<div class="form-group">
 						<label for="estimated_hours">Estimated Hours</label>
 						<input type="number"
+								class="form-control"
 								id="estimated_hours"
 								required
 								name="estimated_hours"
@@ -67,21 +71,29 @@
 
 					<div class="form-group">
 						<label for="hourly_rate">Hourly rate</label>
-						<input type="number"
-								id="hourly_rate"
-								required
-								name="hourly_rate"
-								#hourly_rate='ngModel'
-								[(ngModel)]="proposal.hourly_rate"
-
-						><div [hidden]="hourly_rate.valid || hourly_rate.pristine" class='alert alert-danger'>
-							Hourly Rate is required
+						<div class="input-group">
+							<span class="input-group-addon">$</span>
+							<input type="number"
+											class="form-control"
+											id="hourly_rate"
+											required
+											name="hourly_rate"
+											#hourly_rate='ngModel'
+											[(ngModel)]="proposal.hourly_rate"
+							>
+						</div>
+							
+						<div [hidden]="hourly_rate.valid || hourly_rate.pristine"
+									class='alert alert-danger'
+						>
+							You need to enter your hourly rate for the project
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="weeks_to_complete">Weeks to completion</label>
 						<input type="number"
+								class="form-control"
 								id="weeks_to_complete"
 								required
 								name="weeks_to_complete"
@@ -96,6 +108,7 @@
 					<div class="form-group">
 						<label for="client_email">Client Email <em>(optional)</em></label>
 						<input type="email"
+							   class="form-control"
 								id="client_email"
 								name="client_email"
 								#client_email='ngModel'
