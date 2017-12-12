@@ -11,12 +11,14 @@ var proposal_1 = require("./proposal");
 var ProposalNewComponent = /** @class */ (function () {
     function ProposalNewComponent() {
         this.proposal = new proposal_1.Proposal;
+        this.submitted = false;
     }
     ProposalNewComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'proposal-new',
-            templateUrl: 'proposal-new.component.html'
+            templateUrl: 'proposal-new.component.html',
+            styleUrls: ['proposal-new.component.css']
         })
     ], ProposalNewComponent);
     return ProposalNewComponent;
